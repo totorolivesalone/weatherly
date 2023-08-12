@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weatherly</title>
+    <link rel="icon" type="image/x-icon" href="weather.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weatherly</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Enter city" id="city" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="my-4 text-center">Weather for <span id="cityName"></span> <span id="weathercon"> </span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Temperature</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id ="temp"></span><small class="text-body-secondary fw-light">°C</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Feels like:<span id="feels_like"></span></li>
+                      <li>Max temp:<span id="max_temp"></span></li>
+                      <li>Mintemp:<span id="min_temp"></span></li>
+                      <li>Description:<span id="descr"></span></li>
+                     
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Humidity info</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id="humidity"></span><small class="text-body-secondary fw-light">%</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Wind degrees:<span id="wind_degrees"></span></li>
+                      <li>Wind speed:<span id="wind_speed"></span></li>
+                      <li>Cloud_pct:<span id="cloud_pct"></span></li>
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Air quality</h4>
+                  </div>
+                  <div class="card-body" id="airbody">
+                    <h1 class="card-title pricing-card-title"><span id="overall_aqi"></span><small class="text-body-secondary fw-light">aqi</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>PM 2.5 concentration:<span id="PM2"></span></li>
+                      <li>PM 10 concentration:<span id="PM10"></span></li>
+                      <li>SO2 concentration:<span id="SO2"></span></li>
+                      <li>CO concentration:<span id="CO"></span></li>
+                      <li><span id="airquality"></span></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            
+        
+            
+      </div>
+      <div class="card text-center" >
+        <div class="card-header">
+          <h1>Weather Reports</h1>
+        </div>
+        <div class="card-body">
+          
+          <p class="card-text"><div id="weatherReport"></div></p>
+          
+        </div>
+        <hr/>
+        
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script  src='config.js' ></script>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
