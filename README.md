@@ -1,4 +1,4 @@
-Created a weather-app using Bootstrap and JavaSccript.
+Created a weather-app using Bootstrap and JavaScript.
 ->The users can view realtime weather insights of any city and also the airquality insights.
 The file containing api-keys are not pushed for obvious security reasons.
 Attached below are snapshots of the web-app.
